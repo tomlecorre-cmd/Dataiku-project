@@ -1,6 +1,10 @@
 # Projet de Prédiction d'Attrition Client (Churn Bancaire)
 
-**Technologies et Mots-clés :** Dataiku DSS, Random Forest, Régression Logistique, Churn Prediction, Attrition Client, Feature Engineering, Classification Binaire, ROC AUC, Matrice de Confusion.
+![Dataiku DSS](https://img.shields.io/badge/Dataiku-DSS-00A9E0?style=for-the-badge)
+![Random Forest](https://img.shields.io/badge/Random_Forest-2ea44f?style=for-the-badge)
+![Régression Logistique](https://img.shields.io/badge/Régression_Logistique-2ea44f?style=for-the-badge)
+![Classification Binaire](https://img.shields.io/badge/Classification_Binaire-8A2BE2?style=for-the-badge)
+![ROC AUC](https://img.shields.io/badge/Évaluation-ROC_AUC-FF9900?style=for-the-badge)
 
 Ce projet a été réalisé sur la plateforme Dataiku DSS. L'objectif principal est d'identifier de manière proactive les clients présentant un fort risque de clôture de leurs comptes, afin de permettre aux équipes commerciales de mettre en place des actions de rétention adaptées.
 
