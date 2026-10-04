@@ -1,8 +1,10 @@
 # Projet de Prédiction d'Attrition Client (Churn Bancaire)
 
-Ce projet a été réalisé avec Rishikaran sur la plateforme Dataiku DSS. L'objectif principal est d'identifier de manière proactive les clients présentant un fort risque de clôture de leurs comptes, afin de permettre aux équipes commerciales de mettre en place des actions de rétention adaptées.
+**Technologies et Mots-clés :** Dataiku DSS, Random Forest, Régression Logistique, Churn Prediction, Attrition Client, Feature Engineering, Classification Binaire, ROC AUC, Matrice de Confusion.
 
-## 1. Préparation des données (Data Engineering)
+Ce projet a été réalisé sur la plateforme Dataiku DSS. L'objectif principal est d'identifier de manière proactive les clients présentant un fort risque de clôture de leurs comptes, afin de permettre aux équipes commerciales de mettre en place des actions de rétention adaptées.
+
+## 1. Préparation des données
 
 L'ensemble de la préparation a été modélisé via le Flow Dataiku, en partant de 5 bases de données relationnelles brutes (informations clients, produits détenus, soldes, revenus et informations additionnelles).
 
@@ -11,7 +13,7 @@ L'ensemble de la préparation a été modélisé via le Flow Dataiku, en partant
 * **Création de la Master Table :** Jointures multiples (Left Join) pour consolider l'ensemble des indicateurs sur une maille client unique.
 * **Correction de Data Leakage :** Identification et retrait de la variable de date de clôture lors de la phase de modélisation, celle-ci provoquant une fuite de données empêchant la généralisation de l'algorithme.
 
-## 2. Modélisation et Évaluation (Machine Learning)
+## 2. Modélisation et Évaluation
 
 Le problème métier implique un fort déséquilibre des classes (environ 80 % de clients fidèles contre 20 % de départs). Les algorithmes ont donc été évalués spécifiquement avec la métrique ROC AUC, l'Accuracy classique étant biaisée sur ce type de répartition.
 
