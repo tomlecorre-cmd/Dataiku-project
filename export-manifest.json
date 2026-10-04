@@ -1,0 +1,148 @@
+{
+  "exportedWithOptions": {
+    "exportUploads": true,
+    "exportManagedFS": false,
+    "exportAnalysisModels": true,
+    "exportSavedModels": true,
+    "exportManagedFolders": false,
+    "exportModelEvaluationStores": false,
+    "exportProjectResources": true,
+    "exportLabelingTasks": false,
+    "exportAllInputDatasets": false,
+    "exportAllDatasets": false,
+    "exportAllInputManagedFolders": false,
+    "exportGitRepository": true,
+    "exportInsightsData": false,
+    "useManualPluginsInfo": false,
+    "exportSavedModelsRequiredVersions": false,
+    "exportNotebooksWithOutputs": true,
+    "exportForNewBranch": false,
+    "exportKnowledgeBanks": false,
+    "exportEditableDatasets": true,
+    "exportPromptStudioHistories": false,
+    "exportNotebooks": true,
+    "exportDatasetResources": true,
+    "exportAgentReviews": false,
+    "includedDatasetsData": [],
+    "includedSavedModels": [],
+    "includedModelEvaluationStores": [],
+    "includedManagedFolders": [],
+    "includedCodeStudios": [],
+    "includedKnowledgeBanks": [],
+    "includedLabelingTasks": [],
+    "includedPromptStudiosHistories": [],
+    "shareAllInputDatasets": false,
+    "exportForeignObjectsReferences": true
+  },
+  "actualContent": {
+    "includedDatasets": [
+      {
+        "name": "additional_information",
+        "type": "UploadedFiles",
+        "usedTransferMethod": "UPLOAD",
+        "size": 18775202
+      },
+      {
+        "name": "balances_info",
+        "type": "UploadedFiles",
+        "usedTransferMethod": "UPLOAD",
+        "size": 42974337
+      },
+      {
+        "name": "customers_info",
+        "type": "UploadedFiles",
+        "usedTransferMethod": "UPLOAD",
+        "size": 2437172
+      },
+      {
+        "name": "product_holdings_info",
+        "type": "UploadedFiles",
+        "usedTransferMethod": "UPLOAD",
+        "size": 4870726
+      },
+      {
+        "name": "revenues_info",
+        "type": "UploadedFiles",
+        "usedTransferMethod": "UPLOAD",
+        "size": 37656679
+      }
+    ],
+    "includedSavedModels": [
+      {
+        "id": "E9JDhWyk",
+        "name": "Predict is_churn (binary)",
+        "size": 25597949
+      },
+      {
+        "id": "nSh8gKRf",
+        "name": "Predict is_churn_max (binary)",
+        "size": 16902951
+      }
+    ],
+    "includedManagedFolders": [],
+    "includedModelEvaluationStores": [],
+    "includedCodeStudios": [],
+    "includedKnowledgeBanks": [],
+    "includedLabelingTasks": [],
+    "includedPromptStudiosHistories": [],
+    "allAnalysisData": true,
+    "insightsData": false
+  },
+  "originalProjectKey": "Projetchurnbanque",
+  "manifestVersion": 3,
+  "generatedWithDSSVersion": "14.4.4",
+  "generatedWithDSSConfVersion": "14430",
+  "foreignObjects": [],
+  "exportedWithPlugins": [
+    {
+      "pluginId": "geoadmin",
+      "version": "2.3.1"
+    },
+    {
+      "pluginId": "project-standards",
+      "version": "0.0.1"
+    },
+    {
+      "pluginId": "local-r-dev-setup",
+      "version": "1.0.0"
+    },
+    {
+      "pluginId": "default-samples",
+      "version": "1.0.0"
+    },
+    {
+      "pluginId": "builtin-macros",
+      "version": "1.0.0"
+    },
+    {
+      "pluginId": "dku-saas",
+      "version": "0.0.1"
+    },
+    {
+      "pluginId": "code-studio-blocks",
+      "version": "1.0.0"
+    },
+    {
+      "pluginId": "colorbrewer-palettes",
+      "version": "0.0.1"
+    },
+    {
+      "pluginId": "k8s-metrics-utils",
+      "version": "1.0.0"
+    }
+  ],
+  "exportedWithCodeStudioTemplates": [],
+  "requiredCodeStudioTemplates": [],
+  "requiredConnections": {
+    "dataiku-managed-storage": {
+      "name": "dataiku-managed-storage",
+      "type": "EC2",
+      "isMissing": false
+    }
+  },
+  "allowedMissingConnections": [],
+  "usedCodeEnvRefs": [],
+  "allowedMissingCodeEnvs": [],
+  "usedContainerExecConfs": [],
+  "hasPartitionedDataset": false
+}

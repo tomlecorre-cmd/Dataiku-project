@@ -1,0 +1,14 @@
+{
+    "diagnostics": [
+        {
+            "type": "ML_DIAGNOSTICS_MODEL_CHECK",
+            "message": "80.38% of the train dataset was dropped due to feature handling on 'end_date'",
+            "step": "Preprocessing train set"
+        },
+        {
+            "type": "ML_DIAGNOSTICS_MODEL_CHECK",
+            "message": "79.95% of the test dataset was dropped due to feature handling on 'end_date'",
+            "step": "Preprocessing test set"
+        }
+    ]
+}

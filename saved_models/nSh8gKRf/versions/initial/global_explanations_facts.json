@@ -1,0 +1,13 @@
+{
+    "perClassFacts": {
+        "unique": {
+            "count": {
+                "impact": 1.2256768153174638,
+                "rank": 1,
+                "feature": "count",
+                "correlation": 0.8279103338850681,
+                "type": "NUMERICAL"
+            }
+        }
+    }
+}

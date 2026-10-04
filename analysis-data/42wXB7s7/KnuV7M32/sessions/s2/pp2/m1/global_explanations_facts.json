@@ -1,0 +1,110 @@
+{
+    "perClassFacts": {
+        "unique": {
+            "segment": {
+                "impact": 0.9948548880190572,
+                "rank": 2,
+                "feature": "segment",
+                "positiveCategoricalValue": "Loyalist",
+                "negativeCategoricalValue": "Sophisticates",
+                "infoGain": 0.6802920001921535,
+                "type": "CATEGORICAL"
+            },
+            "product": {
+                "impact": 0.42290235035973256,
+                "rank": 5,
+                "feature": "product",
+                "positiveCategoricalValue": "Current Account",
+                "negativeCategoricalValue": "Personal Loan",
+                "infoGain": 0.6539667797493302,
+                "type": "CATEGORICAL"
+            },
+            "digital_services_sum": {
+                "impact": 0.09282148295541867,
+                "rank": 7,
+                "feature": "digital_services_sum",
+                "correlation": -0.9733933771141833,
+                "type": "NUMERICAL"
+            },
+            "in_person_interaction_sum": {
+                "impact": 0.08222013807520165,
+                "rank": 8,
+                "feature": "in_person_interaction_sum",
+                "correlation": -0.9044575709881103,
+                "type": "NUMERICAL"
+            },
+            "atm_withdrawals_sum": {
+                "impact": 0.07833229901035237,
+                "rank": 9,
+                "feature": "atm_withdrawals_sum",
+                "correlation": -0.9823999103754177,
+                "type": "NUMERICAL"
+            },
+            "product_type": {
+                "impact": 0.06205867342778889,
+                "rank": 11,
+                "feature": "product_type",
+                "positiveCategoricalValue": "Secured Lending",
+                "negativeCategoricalValue": "Deposit Account",
+                "infoGain": 0.5586433855473838,
+                "type": "CATEGORICAL"
+            },
+            "revenue_avg": {
+                "impact": 0.05767362263249026,
+                "rank": 12,
+                "feature": "revenue_avg",
+                "correlation": 0.8553908897229995,
+                "type": "NUMERICAL"
+            },
+            "atm_withdrawals_sum_sum": {
+                "impact": 0.05097645713866801,
+                "rank": 13,
+                "feature": "atm_withdrawals_sum_sum",
+                "correlation": 0.9493331554789609,
+                "type": "NUMERICAL"
+            },
+            "balance_min": {
+                "impact": 0.05015705684224271,
+                "rank": 14,
+                "feature": "balance_min",
+                "correlation": -0.9558751108046881,
+                "type": "NUMERICAL"
+            },
+            "balance_stddev": {
+                "impact": 0.03410969861707898,
+                "rank": 15,
+                "feature": "balance_stddev",
+                "correlation": 0.9433233147273506,
+                "type": "NUMERICAL"
+            },
+            "revenue_sum": {
+                "impact": 0.029823258654974594,
+                "rank": 17,
+                "feature": "revenue_sum",
+                "correlation": -0.809562301807217,
+                "type": "NUMERICAL"
+            },
+            "physical_services_sum_sum": {
+                "impact": 0.012605173420457975,
+                "rank": 18,
+                "feature": "physical_services_sum_sum",
+                "correlation": 0.843884612013022,
+                "type": "NUMERICAL"
+            },
+            "customer_id": {
+                "impact": 0.011915366987315915,
+                "rank": 19,
+                "feature": "customer_id",
+                "correlation": -0.9561054195440664,
+                "type": "NUMERICAL"
+            },
+            "fx_services_sum": {
+                "impact": 0.001688119906933114,
+                "rank": 20,
+                "feature": "fx_services_sum",
+                "correlation": -0.9545443372232373,
+                "type": "NUMERICAL"
+            }
+        }
+    }
+}

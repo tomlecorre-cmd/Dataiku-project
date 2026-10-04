@@ -1,0 +1,48 @@
+{
+  "starred": false,
+  "clusterMetas": {},
+  "customMeta": {
+    "kv": {}
+  },
+  "tags": [],
+  "activeClassifierThreshold": 0.425,
+  "description": "",
+  "name": "Logistic Regression (s1)",
+  "labels": [
+    {
+      "secret": false,
+      "key": "trainDataset:dataset-name",
+      "value": "product_holdings_info_prepared_joined_by_customer_id"
+    },
+    {
+      "secret": false,
+      "key": "testDataset:dataset-name",
+      "value": "product_holdings_info_prepared_joined_by_customer_id"
+    },
+    {
+      "secret": false,
+      "key": "evaluationDataset:dataset-name",
+      "value": "product_holdings_info_prepared_joined_by_customer_id"
+    },
+    {
+      "secret": false,
+      "key": "model:algorithm",
+      "value": "LOGISTIC_REGRESSION"
+    },
+    {
+      "secret": false,
+      "key": "model:name",
+      "value": "Logistic Regression (s1)"
+    },
+    {
+      "secret": false,
+      "key": "model:date",
+      "value": "2026-04-21T20:22:25.512+0000"
+    },
+    {
+      "secret": false,
+      "key": "evaluation:date",
+      "value": "2026-04-21T20:22:25.512+0000"
+    }
+  ]
+}

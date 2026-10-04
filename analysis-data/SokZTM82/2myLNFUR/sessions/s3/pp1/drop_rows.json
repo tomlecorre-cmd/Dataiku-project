@@ -1,0 +1,8 @@
+{
+    "columns": [
+        "end_date",
+        "birth_date",
+        "start_date",
+        "creation_date"
+    ]
+}

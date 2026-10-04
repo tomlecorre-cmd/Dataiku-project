@@ -1,0 +1,56 @@
+{
+    "modelInputNRows": 17872,
+    "modelInputNCols": 4,
+    "modelInputIsSparse": false,
+    "modelInputMemory": 571904,
+    "usedGridSearch": true,
+    "gridSize": 2,
+    "gridBestScore": 0.863409988713911,
+    "gridCells": [
+        {
+            "params": {
+                "max_depth": 6,
+                "max_features": "sqrt",
+                "min_samples_leaf": 1,
+                "n_estimators": 100,
+                "min_samples_split": 3
+            },
+            "score": 0.858694910273803,
+            "scoreStd": 0.002540909818753618,
+            "fitTime": 7.517,
+            "fitTimeStd": 0.5039896824340753,
+            "scoreTime": 1.365,
+            "scoreTimeStd": 0.8902231181001761
+        },
+        {
+            "params": {
+                "max_depth": 12,
+                "max_features": "sqrt",
+                "min_samples_leaf": 1,
+                "n_estimators": 100,
+                "min_samples_split": 3
+            },
+            "score": 0.863409988713911,
+            "scoreStd": 0.003744852980659858,
+            "fitTime": 8.6174,
+            "fitTimeStd": 2.4735885349022784,
+            "scoreTime": 1.2582,
+            "scoreTimeStd": 0.5971815134446142
+        }
+    ],
+    "rawImportance": {
+        "variables": [
+            "count",
+            "balance_min_avg",
+            "balance_avg_avg",
+            "revenue_sum_avg"
+        ],
+        "importances": [
+            0.3431949325992069,
+            0.266822817007585,
+            0.16290494840204303,
+            0.22707730199116505
+        ]
+    },
+    "probaAware": true
+}

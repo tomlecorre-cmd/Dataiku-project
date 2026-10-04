@@ -1,0 +1,14 @@
+{
+    "columns": [
+        "count",
+        "balance_min_avg",
+        "balance_avg_avg",
+        "revenue_sum_avg"
+    ],
+    "importances": [
+        0.9458989623656745,
+        0.009827586206825915,
+        0.028580457634722566,
+        0.015692993792776996
+    ]
+}

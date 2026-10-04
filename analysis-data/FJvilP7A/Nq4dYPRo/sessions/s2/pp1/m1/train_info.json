@@ -1,0 +1,533 @@
+{
+  "state": "FAILED",
+  "failure": {
+    "errorType": "com.dataiku.dip.io.SocketBlockLinkKernelException",
+    "message": "Could not compute AUC: Ended up with less than two-classes in the validation set.",
+    "detailedMessage": "Failed to train : \u003cclass \u0027ValueError\u0027\u003e : Could not compute AUC: Ended up with less than two-classes in the validation set.",
+    "detailedMessageHTML": "\u003cspan\u003e\u003cspan class\u003d\"err-msg\"\u003eCould not compute AUC: Ended up with less than two-classes in the validation set.\u003c/span\u003e\u003c/span\u003e",
+    "stackTraceStr": "com.dataiku.dip.io.SocketBlockLinkKernelException: Could not compute AUC: Ended up with less than two-classes in the validation set.\n\tat com.dataiku.dip.io.SocketBlockLinkInteraction.throwExceptionFromPython(SocketBlockLinkInteraction.java:306)\n\tat com.dataiku.dip.io.SocketBlockLinkInteraction$AsyncResult.checkException(SocketBlockLinkInteraction.java:219)\n\tat com.dataiku.dip.io.SocketBlockLinkInteraction$AsyncResult.get(SocketBlockLinkInteraction.java:194)\n\tat com.dataiku.dip.io.SingleCommandKernelLink$1.call(SingleCommandKernelLink.java:215)\n\tat com.dataiku.dip.analysis.ml.prediction.PredictionTrainAdditionalThread.process(PredictionTrainAdditionalThread.java:76)\n\tat com.dataiku.dip.analysis.ml.shared.PRNSTrainThread.run(PRNSTrainThread.java:164)\nFile /opt/dataiku/python/dataiku/doctor/server.py, line 47, in serve\n\tret \u003d api_command(arg)\nFile /opt/dataiku/python/dataiku/doctor/dkuapi.py, line 46, in aux\n\treturn api(**kwargs)\nFile /opt/dataiku/python/dataiku/doctor/commands.py, line 386, in train_prediction_models_nosave\n\tprediction_train_score_save(transformed_train,\nFile /opt/dataiku/python/dataiku/doctor/prediction_entrypoints.py, line 115, in prediction_train_score_save\n\t(clf, actual_params, prepared_X, iipd) \u003d classification_fit(modeling_params, core_params, transformed_train,\nFile /opt/dataiku/python/dataiku/doctor/prediction/classification_fit.py, line 807, in classification_fit\n\tclf \u003d hyperparameter_search_runner.get_best_estimator()\nFile /opt/dataiku/python/dataiku/doctor/crossval/search_runner.py, line 143, in get_best_estimator\n\tself.aggregated_results \u003d self.search_settings.search_strategy.explore(evaluator)\nFile /opt/dataiku/python/dataiku/doctor/crossval/strategies/grid_search_strategy.py, line 33, in explore\n\tresults, _ \u003d self.explore_batch(evaluator, self.grid_elements)\nFile /opt/dataiku/python/dataiku/doctor/crossval/strategies/abstract_search_strategy.py, line 52, in explore_batch\n\treraise_most_important(\nFile /opt/dataiku/python/dataiku/doctor/distributed/cheap_future.py, line 127, in reraise_most_important\n\tfailed_future.result()\nFile /opt/dataiku/python/dataiku/doctor/distributed/cheap_future.py, line 41, in result\n\treturn self._get_or_raise_result()\nFile /opt/dataiku/python/dataiku/doctor/distributed/cheap_future.py, line 54, in _get_or_raise_result\n\tsix.reraise(*self._exc_info)\nFile /opt/dataiku/pyenv/lib/python3.9/site-packages/six.py, line 723, in reraise\n\traise value.with_traceback(tb)\nFile /opt/dataiku/python/dataiku/doctor/distributed/cheap_future.py, line 26, in _resolve\n\tresult \u003d task_fn()\nFile /opt/dataiku/python/dataiku/doctor/crossval/search_evaluator.py, line 60, in execute_all_splits_aggregate_store_fn\n\treraise_most_important(per_split_futures,\nFile /opt/dataiku/python/dataiku/doctor/distributed/cheap_future.py, line 127, in reraise_most_important\n\tfailed_future.result()\nFile /opt/dataiku/python/dataiku/doctor/distributed/cheap_future.py, line 41, in result\n\treturn self._get_or_raise_result()\nFile /opt/dataiku/python/dataiku/doctor/distributed/cheap_future.py, line 54, in _get_or_raise_result\n\tsix.reraise(*self._exc_info)\nFile /opt/dataiku/pyenv/lib/python3.9/site-packages/six.py, line 723, in reraise\n\traise value.with_traceback(tb)\nFile /opt/dataiku/python/dataiku/doctor/distributed/work_scheduler.py, line 245, in run\n\tresult \u003d self.worker.execute_work(*task.work_args)\nFile /opt/dataiku/python/dataiku/doctor/distributed/local_worker.py, line 36, in execute_work\n\treturn self._context.execute_work(*args)\nFile /opt/dataiku/python/dataiku/doctor/crossval/search_context.py, line 76, in execute_work\n\treturn _dku_fit_and_score(\nFile /opt/dataiku/python/dataiku/doctor/crossval/search_context.py, line 700, in _dku_fit_and_score\n\ttrain_score \u003d _dku_score(estimator, X_train, y_train, scorer, sample_weight\u003dw_train, indices\u003dtrain)\nFile /opt/dataiku/python/dataiku/doctor/crossval/search_context.py, line 640, in _dku_score\n\tscore \u003d scorer(estimator, X, y, sample_weight\u003dsample_weight)\nFile /opt/dataiku/python/dataiku/doctor/prediction/common.py, line 1612, in score_with_remap\n\treturn sign * score_func(y, y_pred, **kwargs)\nFile /opt/dataiku/python/dataiku/doctor/utils/metrics.py, line 116, in mroc_auc_score\n\traise ValueError(\"Could not compute AUC: {reason}\"\n",
+    "stackTrace": [
+      {
+        "file": "SocketBlockLinkInteraction.java",
+        "line": 306,
+        "function": "com.dataiku.dip.io.SocketBlockLinkInteraction.throwExceptionFromPython"
+      },
+      {
+        "file": "SocketBlockLinkInteraction.java",
+        "line": 219,
+        "function": "com.dataiku.dip.io.SocketBlockLinkInteraction$AsyncResult.checkException"
+      },
+      {
+        "file": "SocketBlockLinkInteraction.java",
+        "line": 194,
+        "function": "com.dataiku.dip.io.SocketBlockLinkInteraction$AsyncResult.get"
+      },
+      {
+        "file": "SingleCommandKernelLink.java",
+        "line": 215,
+        "function": "com.dataiku.dip.io.SingleCommandKernelLink$1.call"
+      },
+      {
+        "file": "PredictionTrainAdditionalThread.java",
+        "line": 76,
+        "function": "com.dataiku.dip.analysis.ml.prediction.PredictionTrainAdditionalThread.process"
+      },
+      {
+        "file": "PRNSTrainThread.java",
+        "line": 164,
+        "function": "com.dataiku.dip.analysis.ml.shared.PRNSTrainThread.run"
+      },
+      {
+        "file": "CausedBy",
+        "line": 0,
+        "function": "foreign code"
+      },
+      {
+        "file": "/opt/dataiku/python/dataiku/doctor/server.py",
+        "line": 47,
+        "function": "serve"
+      },
+      {
+        "line": 0,
+        "function": "\tret \u003d api_command(arg)"
+      },
+      {
+        "file": "/opt/dataiku/python/dataiku/doctor/dkuapi.py",
+        "line": 46,
+        "function": "aux"
+      },
+      {
+        "line": 0,
+        "function": "\treturn api(**kwargs)"
+      },
+      {
+        "file": "/opt/dataiku/python/dataiku/doctor/commands.py",
+        "line": 386,
+        "function": "train_prediction_models_nosave"
+      },
+      {
+        "line": 0,
+        "function": "\tprediction_train_score_save(transformed_train,"
+      },
+      {
+        "file": "/opt/dataiku/python/dataiku/doctor/prediction_entrypoints.py",
+        "line": 115,
+        "function": "prediction_train_score_save"
+      },
+      {
+        "line": 0,
+        "function": "\t(clf, actual_params, prepared_X, iipd) \u003d classification_fit(modeling_params, core_params, transformed_train,"
+      },
+      {
+        "file": "/opt/dataiku/python/dataiku/doctor/prediction/classification_fit.py",
+        "line": 807,
+        "function": "classification_fit"
+      },
+      {
+        "line": 0,
+        "function": "\tclf \u003d hyperparameter_search_runner.get_best_estimator()"
+      },
+      {
+        "file": "/opt/dataiku/python/dataiku/doctor/crossval/search_runner.py",
+        "line": 143,
+        "function": "get_best_estimator"
+      },
+      {
+        "line": 0,
+        "function": "\tself.aggregated_results \u003d self.search_settings.search_strategy.explore(evaluator)"
+      },
+      {
+        "file": "/opt/dataiku/python/dataiku/doctor/crossval/strategies/grid_search_strategy.py",
+        "line": 33,
+        "function": "explore"
+      },
+      {
+        "line": 0,
+        "function": "\tresults, _ \u003d self.explore_batch(evaluator, self.grid_elements)"
+      },
+      {
+        "file": "/opt/dataiku/python/dataiku/doctor/crossval/strategies/abstract_search_strategy.py",
+        "line": 52,
+        "function": "explore_batch"
+      },
+      {
+        "line": 0,
+        "function": "\treraise_most_important("
+      },
+      {
+        "file": "/opt/dataiku/python/dataiku/doctor/distributed/cheap_future.py",
+        "line": 127,
+        "function": "reraise_most_important"
+      },
+      {
+        "line": 0,
+        "function": "\tfailed_future.result()"
+      },
+      {
+        "file": "/opt/dataiku/python/dataiku/doctor/distributed/cheap_future.py",
+        "line": 41,
+        "function": "result"
+      },
+      {
+        "line": 0,
+        "function": "\treturn self._get_or_raise_result()"
+      },
+      {
+        "file": "/opt/dataiku/python/dataiku/doctor/distributed/cheap_future.py",
+        "line": 54,
+        "function": "_get_or_raise_result"
+      },
+      {
+        "line": 0,
+        "function": "\tsix.reraise(*self._exc_info)"
+      },
+      {
+        "file": "/opt/dataiku/pyenv/lib/python3.9/site-packages/six.py",
+        "line": 723,
+        "function": "reraise"
+      },
+      {
+        "line": 0,
+        "function": "\traise value.with_traceback(tb)"
+      },
+      {
+        "file": "/opt/dataiku/python/dataiku/doctor/distributed/cheap_future.py",
+        "line": 26,
+        "function": "_resolve"
+      },
+      {
+        "line": 0,
+        "function": "\tresult \u003d task_fn()"
+      },
+      {
+        "file": "/opt/dataiku/python/dataiku/doctor/crossval/search_evaluator.py",
+        "line": 60,
+        "function": "execute_all_splits_aggregate_store_fn"
+      },
+      {
+        "line": 0,
+        "function": "\treraise_most_important(per_split_futures,"
+      },
+      {
+        "file": "/opt/dataiku/python/dataiku/doctor/distributed/cheap_future.py",
+        "line": 127,
+        "function": "reraise_most_important"
+      },
+      {
+        "line": 0,
+        "function": "\tfailed_future.result()"
+      },
+      {
+        "file": "/opt/dataiku/python/dataiku/doctor/distributed/cheap_future.py",
+        "line": 41,
+        "function": "result"
+      },
+      {
+        "line": 0,
+        "function": "\treturn self._get_or_raise_result()"
+      },
+      {
+        "file": "/opt/dataiku/python/dataiku/doctor/distributed/cheap_future.py",
+        "line": 54,
+        "function": "_get_or_raise_result"
+      },
+      {
+        "line": 0,
+        "function": "\tsix.reraise(*self._exc_info)"
+      },
+      {
+        "file": "/opt/dataiku/pyenv/lib/python3.9/site-packages/six.py",
+        "line": 723,
+        "function": "reraise"
+      },
+      {
+        "line": 0,
+        "function": "\traise value.with_traceback(tb)"
+      },
+      {
+        "file": "/opt/dataiku/python/dataiku/doctor/distributed/work_scheduler.py",
+        "line": 245,
+        "function": "run"
+      },
+      {
+        "line": 0,
+        "function": "\tresult \u003d self.worker.execute_work(*task.work_args)"
+      },
+      {
+        "file": "/opt/dataiku/python/dataiku/doctor/distributed/local_worker.py",
+        "line": 36,
+        "function": "execute_work"
+      },
+      {
+        "line": 0,
+        "function": "\treturn self._context.execute_work(*args)"
+      },
+      {
+        "file": "/opt/dataiku/python/dataiku/doctor/crossval/search_context.py",
+        "line": 76,
+        "function": "execute_work"
+      },
+      {
+        "line": 0,
+        "function": "\treturn _dku_fit_and_score("
+      },
+      {
+        "file": "/opt/dataiku/python/dataiku/doctor/crossval/search_context.py",
+        "line": 700,
+        "function": "_dku_fit_and_score"
+      },
+      {
+        "line": 0,
+        "function": "\ttrain_score \u003d _dku_score(estimator, X_train, y_train, scorer, sample_weight\u003dw_train, indices\u003dtrain)"
+      },
+      {
+        "file": "/opt/dataiku/python/dataiku/doctor/crossval/search_context.py",
+        "line": 640,
+        "function": "_dku_score"
+      },
+      {
+        "line": 0,
+        "function": "\tscore \u003d scorer(estimator, X, y, sample_weight\u003dsample_weight)"
+      },
+      {
+        "file": "/opt/dataiku/python/dataiku/doctor/prediction/common.py",
+        "line": 1612,
+        "function": "score_with_remap"
+      },
+      {
+        "line": 0,
+        "function": "\treturn sign * score_func(y, y_pred, **kwargs)"
+      },
+      {
+        "file": "/opt/dataiku/python/dataiku/doctor/utils/metrics.py",
+        "line": 116,
+        "function": "mroc_auc_score"
+      },
+      {
+        "line": 0,
+        "function": "\traise ValueError(\"Could not compute AUC: {reason}\""
+      }
+    ],
+    "logTail": {
+      "totalLines": 1150,
+      "lines": [
+        "    return self._context.execute_work(*args)",
+        "  File \"/opt/dataiku/python/dataiku/doctor/crossval/search_context.py\", line 76, in execute_work",
+        "    return _dku_fit_and_score(",
+        "  File \"/opt/dataiku/python/dataiku/doctor/crossval/search_context.py\", line 700, in _dku_fit_and_score",
+        "    train_score \u003d _dku_score(estimator, X_train, y_train, scorer, sample_weight\u003dw_train, indices\u003dtrain)",
+        "  File \"/opt/dataiku/python/dataiku/doctor/crossval/search_context.py\", line 640, in _dku_score",
+        "    score \u003d scorer(estimator, X, y, sample_weight\u003dsample_weight)",
+        "  File \"/opt/dataiku/python/dataiku/doctor/prediction/common.py\", line 1612, in score_with_remap",
+        "    return sign * score_func(y, y_pred, **kwargs)",
+        "  File \"/opt/dataiku/python/dataiku/doctor/utils/metrics.py\", line 116, in mroc_auc_score",
+        "    raise ValueError(\"Could not compute AUC: {reason}\"",
+        "ValueError: Could not compute AUC: Ended up with less than two-classes in the validation set.",
+        "[2026-04-21 19:06:20,644] [23/Thread-1] [DEBUG] [urllib3.connectionpool] https://dss-headless-node-56800c84.space-1e09aade-dku.svc.cluster.local:10005 \"POST /dip/api/tintercom/containers/put-file?executionId\u003ddoctor-preprocessing-yzrcjnu\u0026fileKind\u003dFILTERED_PATHS\u0026path\u003d%2Fdata%2Fdataiku%2Fdatadir%2Fanalysis-data%2FPROJET_CHURN_BANQUE%2FFJvilP7A%2FNq4dYPRo%2Fsessions%2Fs2%2Fpp1%2Fm1%2Fgrid_search_scores.json\u0026expand\u003dfalse HTTP/1.1\" 200 None",
+        "[2026-04-21 19:06:20,644] [23/Thread-1] [INFO] [dataiku.doctor.distributed.work_scheduler] Scheduler has been soft interrupted",
+        "[2026-04-21 19:06:20,645] [23/MainThread] [INFO] [dataiku.doctor.distributed.work_scheduler] Scheduler has been hard interrupted (shutdown)",
+        "[2026-04-21 19:06:20,645] [23/Thread-4:local-2] [INFO] [dataiku.doctor.distributed.local_worker] Stopping worker: local-2",
+        "[2026-04-21 19:06:20,645] [23/Thread-4:local-2] [INFO] [dataiku.doctor.distributed.local_worker] Stopped worker: local-2",
+        "[2026-04-21 19:06:20,645] [23/Thread-5:local-3] [INFO] [dataiku.doctor.distributed.local_worker] Stopping worker: local-3",
+        "[2026-04-21 19:06:20,645] [23/Thread-5:local-3] [INFO] [dataiku.doctor.distributed.local_worker] Stopped worker: local-3",
+        "[2026-04-21 19:06:20,645] [23/Thread-2:local-0] [INFO] [dataiku.doctor.distributed.local_worker] Stopping worker: local-0",
+        "[2026-04-21 19:06:20,645] [23/Thread-2:local-0] [INFO] [dataiku.doctor.distributed.local_worker] Stopped worker: local-0",
+        "[2026-04-21 19:06:20,645] [23/Thread-3:local-1] [ERROR] [dataiku.doctor.distributed.work_scheduler] All workers are dead, interrupt the scheduler",
+        "[2026-04-21 19:06:20,646] [23/Thread-3:local-1] [INFO] [dataiku.doctor.distributed.local_worker] Stopping worker: local-1",
+        "[2026-04-21 19:06:20,646] [23/Thread-3:local-1] [INFO] [dataiku.doctor.distributed.local_worker] Stopped worker: local-1",
+        "[2026-04-21 19:06:20,646] [23/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Hyperparameter searching",
+        "Traceback (most recent call last):",
+        "  File \"/opt/dataiku/python/dataiku/doctor/server.py\", line 47, in serve",
+        "    ret \u003d api_command(arg)",
+        "  File \"/opt/dataiku/python/dataiku/doctor/dkuapi.py\", line 46, in aux",
+        "    return api(**kwargs)",
+        "  File \"/opt/dataiku/python/dataiku/doctor/commands.py\", line 386, in train_prediction_models_nosave",
+        "    prediction_train_score_save(transformed_train,",
+        "  File \"/opt/dataiku/python/dataiku/doctor/prediction_entrypoints.py\", line 115, in prediction_train_score_save",
+        "    (clf, actual_params, prepared_X, iipd) \u003d classification_fit(modeling_params, core_params, transformed_train,",
+        "  File \"/opt/dataiku/python/dataiku/doctor/prediction/classification_fit.py\", line 807, in classification_fit",
+        "    clf \u003d hyperparameter_search_runner.get_best_estimator()",
+        "  File \"/opt/dataiku/python/dataiku/doctor/crossval/search_runner.py\", line 143, in get_best_estimator",
+        "    self.aggregated_results \u003d self.search_settings.search_strategy.explore(evaluator)",
+        "  File \"/opt/dataiku/python/dataiku/doctor/crossval/strategies/grid_search_strategy.py\", line 33, in explore",
+        "    results, _ \u003d self.explore_batch(evaluator, self.grid_elements)",
+        "  File \"/opt/dataiku/python/dataiku/doctor/crossval/strategies/abstract_search_strategy.py\", line 52, in explore_batch",
+        "    reraise_most_important(",
+        "  File \"/opt/dataiku/python/dataiku/doctor/distributed/cheap_future.py\", line 127, in reraise_most_important",
+        "    failed_future.result()",
+        "  File \"/opt/dataiku/python/dataiku/doctor/distributed/cheap_future.py\", line 41, in result",
+        "    return self._get_or_raise_result()",
+        "  File \"/opt/dataiku/python/dataiku/doctor/distributed/cheap_future.py\", line 54, in _get_or_raise_result",
+        "    six.reraise(*self._exc_info)",
+        "  File \"/opt/dataiku/pyenv/lib/python3.9/site-packages/six.py\", line 723, in reraise",
+        "    raise value.with_traceback(tb)",
+        "  File \"/opt/dataiku/python/dataiku/doctor/distributed/cheap_future.py\", line 26, in _resolve",
+        "    result \u003d task_fn()",
+        "  File \"/opt/dataiku/python/dataiku/doctor/crossval/search_evaluator.py\", line 60, in execute_all_splits_aggregate_store_fn",
+        "    reraise_most_important(per_split_futures,",
+        "  File \"/opt/dataiku/python/dataiku/doctor/distributed/cheap_future.py\", line 127, in reraise_most_important",
+        "    failed_future.result()",
+        "  File \"/opt/dataiku/python/dataiku/doctor/distributed/cheap_future.py\", line 41, in result",
+        "    return self._get_or_raise_result()",
+        "  File \"/opt/dataiku/python/dataiku/doctor/distributed/cheap_future.py\", line 54, in _get_or_raise_result",
+        "    six.reraise(*self._exc_info)",
+        "  File \"/opt/dataiku/pyenv/lib/python3.9/site-packages/six.py\", line 723, in reraise",
+        "    raise value.with_traceback(tb)",
+        "  File \"/opt/dataiku/python/dataiku/doctor/distributed/work_scheduler.py\", line 245, in run",
+        "    result \u003d self.worker.execute_work(*task.work_args)",
+        "  File \"/opt/dataiku/python/dataiku/doctor/distributed/local_worker.py\", line 36, in execute_work",
+        "    return self._context.execute_work(*args)",
+        "  File \"/opt/dataiku/python/dataiku/doctor/crossval/search_context.py\", line 76, in execute_work",
+        "    return _dku_fit_and_score(",
+        "  File \"/opt/dataiku/python/dataiku/doctor/crossval/search_context.py\", line 700, in _dku_fit_and_score",
+        "    train_score \u003d _dku_score(estimator, X_train, y_train, scorer, sample_weight\u003dw_train, indices\u003dtrain)",
+        "  File \"/opt/dataiku/python/dataiku/doctor/crossval/search_context.py\", line 640, in _dku_score",
+        "    score \u003d scorer(estimator, X, y, sample_weight\u003dsample_weight)",
+        "  File \"/opt/dataiku/python/dataiku/doctor/prediction/common.py\", line 1612, in score_with_remap",
+        "    return sign * score_func(y, y_pred, **kwargs)",
+        "  File \"/opt/dataiku/python/dataiku/doctor/utils/metrics.py\", line 116, in mroc_auc_score",
+        "    raise ValueError(\"Could not compute AUC: {reason}\"",
+        "ValueError: Could not compute AUC: Ended up with less than two-classes in the validation set.",
+        "[2026-04-21 19:06:20,649] [23/MainThread] [INFO] [dataiku.base.socket_block_link] Client closed",
+        "Installing debugging signal handler",
+        "[2026-04-21 19:06:20,984] [1/MainThread] [INFO] [root] Stop monitoring process 23"
+      ],
+      "status": [
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        3,
+        3,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        3,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        1,
+        3,
+        3,
+        3,
+        1,
+        1,
+        1
+      ],
+      "maxLevel": 3,
+      "maxLevelFirstLine": 1
+    },
+    "title": "Failed to train"
+  },
+  "preSearchDescription": {
+    "gridLength": 2,
+    "searchStrategy": "GRID",
+    "importantParams": [
+      {
+        "name": "trees",
+        "vals": [
+          "100"
+        ]
+      },
+      {
+        "name": "depth",
+        "vals": [
+          "6",
+          "15"
+        ]
+      },
+      {
+        "name": "min_samples",
+        "vals": [
+          "1"
+        ]
+      }
+    ]
+  },
+  "resumed": false,
+  "timeOrderingEnabled": false,
+  "sampleWeightsEnabled": false,
+  "modelId": "m1",
+  "progress": {
+    "top_level_todo": [
+      "Fitting model",
+      "Saving model",
+      "Scoring model",
+      "Preparing explainability"
+    ],
+    "stack": [
+      {
+        "name": "Hyperparameter searching",
+        "target": 0.0,
+        "cur": 0.0,
+        "important": false,
+        "depth": 0,
+        "startTimestamp": 1776798377325,
+        "msSinceStart": 0
+      }
+    ],
+    "top_level_done": [
+      {
+        "name": "Loading train set",
+        "time": 4054
+      },
+      {
+        "name": "Loading test set",
+        "time": 1015
+      },
+      {
+        "name": "Collecting statistics",
+        "time": 209
+      },
+      {
+        "name": "Preprocessing train set",
+        "time": 201
+      },
+      {
+        "name": "Preprocessing test set",
+        "time": 99
+      }
+    ]
+  },
+  "startTime": 1776798371741,
+  "endTime": 0,
+  "preprocessingTime": 0,
+  "trainingTime": 0,
+  "hyperparamsSearchTime": 0,
+  "pythonVersion": "3.9.25",
+  "packagesVersion": {
+    "pandas": "2.2.3",
+    "scikit-learn": "1.5.2",
+    "scipy": "1.13.1",
+    "lightgbm": "4.6.0",
+    "flask": "2.2.5",
+    "itsdangerous": "2.2.0",
+    "jinja2": "3.1.6",
+    "xgboost": "1.7.6",
+    "werkzeug": "3.1.8",
+    "statsmodels": "0.14.6",
+    "pillow": "11.3.0",
+    "markupsafe": "3.0.3",
+    "cloudpickle": "1.5.0"
+  }
+}

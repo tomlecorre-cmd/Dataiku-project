@@ -1,0 +1,17 @@
+{
+  "trainedWithDSSVersion": "14.4.4",
+  "backend": "PY_MEMORY",
+  "isValid": true,
+  "type": "BINARY_PROBABILISTIC",
+  "algorithm_name": "FOREST_CLASSIFIER",
+  "columns": [
+    "count",
+    "balance_min_avg",
+    "balance_avg_avg",
+    "revenue_sum_avg"
+  ],
+  "classes": [
+    "false",
+    "true"
+  ]
+}

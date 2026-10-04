@@ -1,0 +1,16 @@
+{
+    "num_columns": [
+        "count",
+        "balance_min_avg",
+        "balance_avg_avg",
+        "revenue_sum_avg"
+    ],
+    "num_values": [
+        2.4552931960608775,
+        8132.268697746837,
+        11223.687274500806,
+        89.49772659659985
+    ],
+    "cat_columns": [],
+    "cat_values": []
+}

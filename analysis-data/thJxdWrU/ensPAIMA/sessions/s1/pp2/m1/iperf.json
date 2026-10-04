@@ -1,0 +1,124 @@
+{
+    "modelInputNRows": 17872,
+    "modelInputNCols": 4,
+    "modelInputIsSparse": false,
+    "modelInputMemory": 571904,
+    "usedGridSearch": true,
+    "gridSize": 5,
+    "gridBestScore": 0.8099247112110547,
+    "gridCells": [
+        {
+            "params": {
+                "C": 0.1,
+                "penalty": "l2"
+            },
+            "score": 0.809810392696296,
+            "scoreStd": 0.0029294085917235106,
+            "fitTime": 0.07440000000000001,
+            "fitTimeStd": 0.03121922484623858,
+            "scoreTime": 0.119,
+            "scoreTimeStd": 0.008988882021697692
+        },
+        {
+            "params": {
+                "C": 0.01,
+                "penalty": "l2"
+            },
+            "score": 0.8060180586972698,
+            "scoreStd": 0.0023745158793660034,
+            "fitTime": 0.0638,
+            "fitTimeStd": 0.015992498241363045,
+            "scoreTime": 0.1186,
+            "scoreTimeStd": 0.01026839812239475
+        },
+        {
+            "params": {
+                "C": 10.0,
+                "penalty": "l2"
+            },
+            "score": 0.8096396442764866,
+            "scoreStd": 0.0025909239514406114,
+            "fitTime": 0.0772,
+            "fitTimeStd": 0.02169239498073,
+            "scoreTime": 0.098,
+            "scoreTimeStd": 0.02850263145746371
+        },
+        {
+            "params": {
+                "C": 1.0,
+                "penalty": "l2"
+            },
+            "score": 0.8099247112110547,
+            "scoreStd": 0.0025436179117525348,
+            "fitTime": 0.0782,
+            "fitTimeStd": 0.014579437574886077,
+            "scoreTime": 0.1114,
+            "scoreTimeStd": 0.04346308778722469
+        },
+        {
+            "params": {
+                "C": 100.0,
+                "penalty": "l2"
+            },
+            "score": 0.8096112422088352,
+            "scoreStd": 0.0025911081395229925,
+            "fitTime": 0.0886,
+            "fitTimeStd": 0.02490461804565571,
+            "scoreTime": 0.068,
+            "scoreTimeStd": 0.03544573317058063
+        }
+    ],
+    "lmCoefficients": {
+        "variables": [
+            "count",
+            "balance_min_avg",
+            "balance_avg_avg",
+            "revenue_sum_avg"
+        ],
+        "coefs": [
+            1.2587267250396352,
+            2.753107998282961,
+            -2.796653717123725,
+            -0.1618721090845217
+        ],
+        "stderr": [
+            0.025005879688315164,
+            0.1968041376772091,
+            0.19812620138530965,
+            0.02468794346342633
+        ],
+        "rescaledStderr": [
+            0.017588020746116588,
+            7.2543270053440755e-06,
+            7.218974035566399e-06,
+            0.00016652333653695734
+        ],
+        "tstat": [
+            50.337230312589945,
+            13.989075792697546,
+            -14.115516764412599,
+            -6.556727145957916
+        ],
+        "pvalue": [
+            0.0,
+            0.0,
+            0.0,
+            2.825362166447576e-11
+        ],
+        "interceptStderr": 0.01748962851126074,
+        "interceptTstat": -10.826875637094098,
+        "interceptPvalue": 0.0,
+        "interceptCoef": -0.1893580328303952,
+        "rescaledCoefs": [
+            0.8853322510398807,
+            0.00010148133030277089,
+            -0.00010189954902089677,
+            -0.0010918480811073538
+        ],
+        "rescaledInterceptCoef": -1.9469751382176275,
+        "rescaledInterceptStderr": 0.2190628462428527,
+        "rescaledInterceptTstat": -8.887746925643494,
+        "rescaledInterceptPvalue": 0.0
+    },
+    "probaAware": true
+}

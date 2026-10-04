@@ -1,0 +1,34 @@
+{
+    "perClassFacts": {
+        "unique": {
+            "count": {
+                "impact": 1.0310557883729734,
+                "rank": 1,
+                "feature": "count",
+                "correlation": 0.8805569166372947,
+                "type": "NUMERICAL"
+            },
+            "balance_min_avg": {
+                "impact": 1.0245766510555572,
+                "rank": 2,
+                "feature": "balance_min_avg",
+                "correlation": 0.9457645565028114,
+                "type": "NUMERICAL"
+            },
+            "balance_avg_avg": {
+                "impact": 0.9872953330482676,
+                "rank": 3,
+                "feature": "balance_avg_avg",
+                "correlation": -0.9254489388717575,
+                "type": "NUMERICAL"
+            },
+            "revenue_sum_avg": {
+                "impact": 0.08141471021890077,
+                "rank": 4,
+                "feature": "revenue_sum_avg",
+                "correlation": -0.9655323660157704,
+                "type": "NUMERICAL"
+            }
+        }
+    }
+}

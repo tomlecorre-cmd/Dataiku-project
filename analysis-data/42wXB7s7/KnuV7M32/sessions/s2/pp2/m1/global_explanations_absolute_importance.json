@@ -1,0 +1,24 @@
+{
+    "absoluteImportance": {
+        "count": 0.5591977644195426,
+        "balance_distinct": 0.5564588292662963,
+        "segment": 0.9948548880190567,
+        "product": 0.4229023503597328,
+        "start_date": 1.3730163829442739,
+        "creation_date": 0.06703354391978243,
+        "revenue_avg": 0.05767362263249024,
+        "revenue_sum": 0.029823258654974573,
+        "birth_date": 0.2191841387954085,
+        "atm_withdrawals_sum_sum": 0.05097645713866798,
+        "balance_stddev": 0.034109698617078986,
+        "physical_services_sum_sum": 0.012605173420457973,
+        "atm_withdrawals_sum": 0.07833229901035238,
+        "fx_services_sum": 0.0016881199069331146,
+        "in_person_interaction_sum": 0.08222013807520163,
+        "customer_id": 0.011915366987315915,
+        "balance_min": 0.05015705684224271,
+        "digital_services_sum": 0.09282148295541864,
+        "first_name": 0.03178090356554509,
+        "product_type": 0.06205867342778889
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mapping": {
+        "birth_date": [
+            "YEAR",
+            "WEEK",
+            "QUARTER",
+            "MONTH"
+        ],
+        "start_date": [
+            "YEAR",
+            "WEEK",
+            "QUARTER"
+        ],
+        "creation_date": [
+            "YEAR",
+            "WEEK",
+            "QUARTER",
+            "MONTH"
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "columns": [
+    {"name":"customer_id","type":"string"},
+    {"name":"is_churn_max","type":"boolean"},
+    {"name":"balance_min_avg","type":"double"},
+    {"name":"balance_avg_avg","type":"double"},
+    {"name":"revenue_sum_avg","type":"double"},
+    {"name":"count","type":"bigint"}
+  ],
+  "userModified": true
+}

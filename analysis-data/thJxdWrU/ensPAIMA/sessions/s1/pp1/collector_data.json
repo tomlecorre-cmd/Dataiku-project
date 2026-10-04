@@ -1,0 +1,62 @@
+{
+    "per_feature": {
+        "count": {
+            "stats": {
+                "min": 1.0,
+                "average": 2.4552931960608775,
+                "median": 2.0,
+                "max": 9.0,
+                "p99": 7.0,
+                "std": 1.4217563220600835
+            },
+            "missing_impute_with_value": 2.4552931960608775
+        },
+        "balance_min_avg": {
+            "stats": {
+                "min": -17760.86,
+                "average": 8132.268697746837,
+                "median": -146.1,
+                "max": 665420.8125,
+                "p99": 118050.18509999992,
+                "std": 27129.206821284533
+            },
+            "missing_impute_with_value": 8132.268697746837
+        },
+        "is_churn_max": {
+            "stats": {}
+        },
+        "balance_avg_avg": {
+            "stats": {
+                "min": -4693.66,
+                "average": 11223.687274500806,
+                "median": 2638.3681250000004,
+                "max": 684889.7243750001,
+                "p99": 123396.10933624978,
+                "std": 27445.20210339899
+            },
+            "missing_impute_with_value": 11223.687274500806
+        },
+        "customer_id": {
+            "stats": {}
+        },
+        "revenue_sum_avg": {
+            "stats": {
+                "min": 0.0,
+                "average": 89.49772659659985,
+                "median": 34.02897650236696,
+                "max": 8222.546029785168,
+                "p99": 600.255,
+                "std": 148.2551573661702
+            },
+            "missing_impute_with_value": 89.49772659659985
+        }
+    },
+    "feature_order": [
+        "count",
+        "balance_min_avg",
+        "is_churn_max",
+        "balance_avg_avg",
+        "customer_id",
+        "revenue_sum_avg"
+    ]
+}

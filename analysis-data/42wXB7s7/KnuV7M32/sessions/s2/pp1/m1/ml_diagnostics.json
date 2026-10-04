@@ -1,0 +1,9 @@
+{
+    "diagnostics": [
+        {
+            "type": "ML_DIAGNOSTICS_LEAKAGE_DETECTION",
+            "message": "AUC=0.998, too good to be true?",
+            "step": "Scoring model"
+        }
+    ]
+}

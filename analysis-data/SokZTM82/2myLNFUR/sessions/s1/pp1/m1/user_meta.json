@@ -1,0 +1,38 @@
+{
+  "starred": false,
+  "clusterMetas": {},
+  "customMeta": {
+    "kv": {}
+  },
+  "tags": [],
+  "activeClassifierThreshold": 0.0,
+  "description": "",
+  "name": "Random forest (s1)",
+  "labels": [
+    {
+      "secret": false,
+      "key": "trainDataset:dataset-name",
+      "value": "product_holdings_info_prepared_joined"
+    },
+    {
+      "secret": false,
+      "key": "testDataset:dataset-name",
+      "value": "product_holdings_info_prepared_joined"
+    },
+    {
+      "secret": false,
+      "key": "evaluationDataset:dataset-name",
+      "value": "product_holdings_info_prepared_joined"
+    },
+    {
+      "secret": false,
+      "key": "model:algorithm",
+      "value": "RANDOM_FOREST_CLASSIFICATION"
+    },
+    {
+      "secret": false,
+      "key": "model:name",
+      "value": "Random forest (s1)"
+    }
+  ]
+}

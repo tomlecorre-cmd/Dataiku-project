@@ -1,0 +1,24 @@
+{
+    "absoluteImportance": {
+        "count": 0.8768216965204082,
+        "balance_distinct": 0.5955009567249157,
+        "segment": 0.41825486322554134,
+        "start_date": 0.42849336879797695,
+        "balance_min": 0.11645848941659248,
+        "product": 0.08269069420272804,
+        "creation_date": 0.048368496818176954,
+        "revenue_sum": 0.07730701488846602,
+        "product_type": 0.06293630165255318,
+        "birth_date": 0.049511109306542136,
+        "balance_stddev": 0.05005795563379973,
+        "customer_id": 0.026030662209229685,
+        "balance_avg": 0.03751819107268915,
+        "balance_max": 0.05943614980279393,
+        "atm_withdrawals_sum": 0.022310051164318837,
+        "digital_services_sum": 0.030484256505176964,
+        "revenue_avg": 0.0528016477368582,
+        "fx_services_sum": 0.0190552073126011,
+        "atm_withdrawals_sum_sum": 0.017262760077483764,
+        "income": 0.01797518128169172
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "backend": "PY_MEMORY",
+    "algorithm_name": "LOGISTIC",
+    "columns": [
+        "count",
+        "balance_min_avg",
+        "balance_avg_avg",
+        "revenue_sum_avg"
+    ],
+    "classes": [
+        "false",
+        "true"
+    ]
+}
